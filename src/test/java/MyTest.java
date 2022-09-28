@@ -14,7 +14,6 @@ public class MyTest {
         driver.findElement(By.xpath("//div[@class='s-widget-container s-spacing-small s-widget-container-height-small celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results_1']//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-3']//span[1]")).click();
         String pageTile = driver.getTitle();
         Assert.assertNotEquals(pageTile, "amazon");
-
         driver.close();
 
 
